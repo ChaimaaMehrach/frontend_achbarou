@@ -1,0 +1,4 @@
+FROM openjdk:17
+WORKDIR /app
+COPY target/Client_Tmp.jar Client_Tmp.jar
+CMD ["java", "-jar", "Client_Tmp.jar"]
